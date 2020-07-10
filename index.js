@@ -26,5 +26,11 @@ function keepGoing (array, changeValue, skipValue){
 }
 
 function findBy(array, findFn){
-  
+  array.forEach(element => {
+  	if (element === findFn){
+  		return findFn;
+  	} else {
+  		return null;
+  	}
+  	});
 }
