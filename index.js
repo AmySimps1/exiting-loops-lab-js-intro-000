@@ -31,7 +31,9 @@ function findBy(array, findFn){
   		if (array[i] === findFn) {
   			return array[i];
   		} else { 
+  			if (array[i] !== findFn) {
   			return null;
+  			}
   		}
 	}
 }
